@@ -24,7 +24,7 @@
         echo "<script>
             alert('¡QUE MAL, PARECE QUE TUS CREDENCIALES SON INCORRECTAS!');
             history.back();
-        </script>";
+            </script>";
         exit(-1);
     }
 
