@@ -103,6 +103,7 @@ include_once(RAIZ_APLICACION."/functions.php");
                 return 0;
             }
         }
+
     }
 
 ?>

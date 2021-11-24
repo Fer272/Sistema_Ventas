@@ -15,7 +15,7 @@
         $_SESSION['nombre_usuario'] = $fila['nombre'];
         $_SESSION['user'] = $fila['usuario'];
         $_SESSION['email_usuario'] = $fila['email'];
-        $SESSION['user_role_id'] = $fila['idrol'];
+        $_SESSION['user_role_id'] = $fila['idrol'];
         header("location: ../../main.php");
     }
 

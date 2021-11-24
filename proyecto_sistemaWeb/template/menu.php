@@ -8,7 +8,9 @@
                         <li><a href="#" class="nav-link px-2 text-white">Productos</a></li>
                         <li><a href="#" class="nav-link px-2 text-white" onclick="cargarContenido('modules/Usuarios/listadoUsuarios.php');">Usuarios</a></li>
                     </ul>
-
+                    <div id="usuarioMenu">
+                    <?php echo "Usuario: ".$_SESSION['nombre_usuario']."--"?>
+                    </div>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                         <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
                     </form>

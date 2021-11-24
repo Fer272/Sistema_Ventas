@@ -8,13 +8,6 @@ body {
     vertical-align: text-bottom;
 }
 
-footer {
-    
-    position: absolute;
-    bottom: 0;
-    left: 200px;
-}
-
 /*/////////////////////////////// CSS PROPIO //////////////////*/
 
 #containerHeader{
@@ -52,20 +45,10 @@ h4{
 }
 
 
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+footer {
+    position:relative;
 }
-.text-white {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
-}
-.p-3 {
-    padding: 1rem!important;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-nav {
-    display: block;
+
+#contonedorPrincipal{
+    left: 50px;
 }

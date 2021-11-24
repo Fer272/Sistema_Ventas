@@ -1,4 +1,4 @@
-$('#btnAgregarUsuario').on('click', function(){
+$("#btnAgregarUsuario").on("click", function(){
     
     var rol = $('#role_id').val();
     var nombre = $('#nombre').val();
@@ -93,7 +93,7 @@ function cargarUsuarios(id) {
     $.ajax({
         type: "POST",
         data: parametros,
-        url: "modules/usuarios/usuariosController.php",
+        url: "modules/Usuarios/usuariosController.php",
         dataType: "json",
         success: function (datos) {
               $('#editIdUsuario').val(datos['idusuario']);
@@ -161,7 +161,7 @@ $("#btnConfirmEditarUsuario").on("click", function () {
         telefono +
         "&role_id=" +
         idrol,
-      url: "modules/usuarios/usuariosController.php",
+      url: "modules/Usuarios/usuariosController.php",
       dataType: "json",
       success: function (newdata) {
         var nuevoresultado = newdata.resultado;
@@ -170,7 +170,7 @@ $("#btnConfirmEditarUsuario").on("click", function () {
           $("body").removeClass("modal-open");
           $(".modal-backdrop").remove();
           alert("Usuario editado exitosamente");
-          CargarContenido("modules/Usuarios/listadoUsuarios.php");
+          cargarContenido('modules/Usuarios/listadoUsuarios.php');
         } else {
           alert("No se pudo crear el usuario");
         }

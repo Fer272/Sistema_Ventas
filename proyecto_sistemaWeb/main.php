@@ -10,7 +10,7 @@ include 'template/menu.php';
         <!-- INICIAL EL CONTENIDO DINAMICO DEL SITIO -->
         <div class="container-fluid">
             <div class="row">
-                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <main>
                     <div class="container" id="contenedorPrincipal">
                         <!-- AQUI VA EL CONTENIDO DINAMICO -->
                     </div>
