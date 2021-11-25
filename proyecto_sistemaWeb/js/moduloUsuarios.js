@@ -42,17 +42,16 @@ $("#btnAgregarUsuario").on("click", function(){
     
     $.ajax({
         type: 'POST',
-        data: "crear_usuario=1&rol= "+rol+" &nombre= "+nombre+" &usuario= "+usuario+" &correo= "+correo+" &clave= "+clave+" &telefono= "+telefono+" &dpi= "+dpi+" &direccion= "+direccion,
+        data: "crear_usuario=1&rol="+rol+"&nombre="+nombre+"&usuario="+usuario+"&correo="+correo+"&clave="+clave+"&telefono="+telefono+"&dpi="+dpi+"&direccion="+direccion,
         url: 'modules/Usuarios/usuariosController.php',
         dataType: 'json',
         success: function(data){
             var resultado = data.resultado;
             if(resultado === 1){
-                $('staticBackdrop').modal('hide');
+                $('#staticBackdrop').modal('hide');
                 $('body').removeClass('modal-open');
                 $('.modal-backdrop').remove();
-
-                alert('Usuario creado exitosamente');
+                swal("¡USUARIO CREADO EXITOSAMENTE!", "Presione para continuar", "success");
                 cargarContenido('modules/Usuarios/listadoUsuarios.php');
             }
             else{
@@ -71,11 +70,11 @@ function eliminarUsuario(idusuario){
         success: function(data){
             var resultado = data.resultado;
             if(resultado === 1){
-                $('staticBackdrop').modal('hide');
+                $('#staticBackdrop').modal('hide');
                 $('body').removeClass('modal-open');
                 $('.modal-backdrop').remove();
 
-                alert('Usuario eliminado exitosamente');
+                swal("¡USUARIO ELIMINADO EXITOSAMENTE!", "Presione para continuar", "error");
                 cargarContenido('modules/Usuarios/listadoUsuarios.php');
             }
             else{
@@ -169,7 +168,7 @@ $("#btnConfirmEditarUsuario").on("click", function () {
           $("#modalEditar").modal("hide");
           $("body").removeClass("modal-open");
           $(".modal-backdrop").remove();
-          alert("Usuario editado exitosamente");
+          swal("¡USUARIO EDITADO EXITOSAMENTE!", "Presione para continuar", "warning");
           cargarContenido('modules/Usuarios/listadoUsuarios.php');
         } else {
           alert("No se pudo crear el usuario");

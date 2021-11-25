@@ -30,3 +30,5 @@
 
     ob_end_flush();
 ?>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
