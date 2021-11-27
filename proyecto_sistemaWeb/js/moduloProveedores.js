@@ -47,7 +47,7 @@ $("#btnAgregarProveedor").on("click", function(){
                 $('#staticBackdropPro').modal('hide');
                 $('body').removeClass('modal-open');
                 $('.modal-backdrop').remove();
-                swal("¡USUARIO CREADO EXITOSAMENTE!", "Presione para continuar", "success");
+                swal("¡PROVEEDOR CREADO EXITOSAMENTE!", "Presione para continuar", "success");
                 cargarContenido('modules/Proveedores/listadoProveedores.php');
             }
             else{
@@ -70,11 +70,11 @@ function eliminarProveedor(idproveedor){
                 $('body').removeClass('modal-open');
                 $('.modal-backdrop').remove();
 
-                swal("¡PROVEEDOR ELIMINADO EXITOSAMENTE!", "Presione para continuar", "error");
+                swal("¡PERSONA ELIMINADA EXITOSAMENTE!", "Presione para continuar", "error");
                 cargarContenido('modules/Proveedores/listadoProveedores.php');
             }
             else{
-                alert('No se pudo eliminar el proveedor');
+                alert('No se pudo eliminar a la persona');
             }
         }
     });    
@@ -132,10 +132,10 @@ $("#btnConfirmEditarProveedor").on("click", function () {
           $("#modalEditarPro").modal("hide");
           $("body").removeClass("modal-open");
           $(".modal-backdrop").remove();
-          swal("¡PROVEEDOR EDITADO EXITOSAMENTE!", "Presione para continuar", "warning");
+          swal("¡PERSONA EDITADA EXITOSAMENTE!", "Presione para continuar", "warning");
           cargarContenido('modules/Proveedores/listadoProveedores.php');
         } else {
-          alert("No se pudo editar el proveedor");
+          alert("No se pudo editar a la persona");
         }
       },
     });

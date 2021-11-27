@@ -52,3 +52,8 @@ footer {
 #contonedorPrincipal{
     left: 50px;
 }
+
+.text-nav-link{
+    color: white;
+    text-decoration: none;
+}
